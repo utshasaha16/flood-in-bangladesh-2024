@@ -6,3 +6,4 @@ function getTextFieldValue(id){
     const textNumber = parseFloat(document.getElementById(id).innerText);
     return textNumber;
 };
+
