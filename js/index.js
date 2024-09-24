@@ -132,7 +132,7 @@ document.getElementById('blog-button')
     window.location.href = './home.html'
 });
 // redirect another page
-document.getElementById('home-button')
-  .addEventListener('click', function(){
-    window.location.href = './index.html'
-})
+// document.getElementById('home-button')
+//   .addEventListener('click', function(){
+//     window.location.href = './index.html'
+// })
