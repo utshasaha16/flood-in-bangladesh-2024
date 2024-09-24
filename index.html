@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en" data-theme="light">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>flood in bangladesh 2024</title>
     <!-- google font cdn -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
       rel="stylesheet"
-    >
+    />
     <!-- daisy ui cdn -->
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
@@ -78,6 +78,8 @@
           History
         </button>
       </div>
+      <!-- history section -->
+      <div id="history-section" class="hidden space-y-5 w-11/12 mx-auto"></div>
     </header>
     <!-- started main  -->
     <main class="my-20">
@@ -119,7 +121,9 @@
                 placeholder="Write Donation Amount"
                 class="input input-bordered input-md w-full"
               />
-              <button id="input-btn-one" class="btn bg-primary w-full">Donate Now</button>
+              <button id="input-btn-one" class="btn bg-primary w-full">
+                Donate Now
+              </button>
             </div>
           </div>
         </div>
@@ -160,7 +164,9 @@
                 placeholder="Write Donation Amount"
                 class="input input-bordered input-md w-full"
               />
-              <button id="input-btn-two" class="btn bg-primary w-full">Donate Now</button>
+              <button id="input-btn-two" class="btn bg-primary w-full">
+                Donate Now
+              </button>
             </div>
           </div>
         </div>
@@ -204,16 +210,33 @@
                 placeholder="Write Donation Amount"
                 class="input input-bordered input-md w-full"
               />
-              <button id="input-btn-three" class="btn bg-primary w-full">Donate Now</button>
+              <button id="input-btn-three" class="btn bg-primary w-full">
+                Donate Now
+              </button>
             </div>
           </div>
         </div>
       </section>
-      <!-- history section -->
-      <div id="history-container" class="w-10/12 mx-auto hidden"></div>
+      <!-- create modal -->
+      <div>
+      <dialog id="my_modal_1" class="modal">
+        <div class="modal-box text-center">
+          <h3 class="text-3xl font-bold">Congrats!</h3>
+          <div class="flex justify-center mt-6"><img src="./assets/coin.png" alt=""></div>
+          <p class="py-4">You Have Donated For Humankind</p>
+          <h2 class="text-xl font-bold">Successfully</h2>
+          <div class="modal-action justify-center">
+            <form method="dialog">
+              <!-- if there is a button in form, it will close the modal -->
+              <button class="btn">Close Confirmation</button>
+            </form>
+          </div>
+        </div>
+      </dialog>
+    </div>
     </main>
     <!-- started footer -->
-    <footer></footer>
+    <footer class="border shadow-md"></footer>
     <script src="/js/index.js"></script>
     <script src="/js/home.js"></script>
   </body>

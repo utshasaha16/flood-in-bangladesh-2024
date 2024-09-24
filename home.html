@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FAQ Question</title>
     <!-- google font cdn -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,6 +36,79 @@
     </script>
 </head>
 <body>
-    
+  <!-- header start -->
+    <header>
+      <section class="bg-[#F9F7F3]"></section>
+        <!-- star navbar -->
+        <nav class="w-11/12 mx-auto">
+          <!-- nav container -->
+          <div class="flex justify-between items-center py-6">
+            <button
+              id="home-button"
+              class="btn bg-primary text-xl font-semibold"
+            >
+              Home
+            </button>
+            <div class="flex justify-center items-center gap-5">
+              <img src="./assets/logo.png" alt="">
+              <p class="text-xl font-semibold">Donate Bangladesh</p>
+            </div>
+            <div
+              class="flex items-center justify-center gap-2 text-xl font-medium"
+            >
+              <img src="./assets/coin.png" alt="">
+              <span id="main-balance">100000</span>
+              <p>BDT</p>
+            </div>
+          </div>
+        </nav>
+      </section>
+    </header>
+    <!-- main start -->
+     <main>
+      <section class="w-11/12 mx-auto mt-9">
+        <div class="flex items-center pb-5">
+          <h1 class="text-3xl font-extrabold">Important FAQ</h1>
+        <div class="w-10"><img src="./assets/chat.png" alt=""></div>
+        </div>
+        <!-- collapse board -->
+        <div class="join join-vertical w-full">
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4" checked="checked"/>
+            <div class="collapse-title text-xl font-medium">What is the document object model (DOM)?</div>
+            <div class="collapse-content">
+              <p> The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4"/>
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p>
+                Using getElementById,
+                Using getElementsByClassName,
+                Using getElementsByTagName,
+                Using querySelector,
+                Using querySelectorAll,
+              </p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4">
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM why is it useful?</div>
+            <div class="collapse-content">
+              <p>Event delegation is a technique in JavaScript that involves handling events at a higher level in the DOM tree, rather than attaching individual event listeners to each child element.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow join-item border-base-300 border">
+            <input type="radio" name="my-accordion-4"/>
+            <div class="collapse-title text-xl font-medium">How do you manipulate an elements attribute and styles  using the DOM?</div>
+            <div class="collapse-content">
+              <p>To manipulate an elements attributes and styles using the DOM in JavaScript. can either use methods that modify the attributes directly or interact with the style property to adjust the elements visual appearance. Heres how to achieve both such as id, src, href, alt, etc.</p>
+            </div>
+          </div>
+        </div>
+    </section>
+     </main>
 </body>
 </html>
